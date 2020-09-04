@@ -52,6 +52,7 @@
     "yargs": "^6.4.0"
   },
   "scripts": {
+    "buid": "npm build",
     "build": "gulp build",
     "gulp": "gulp build",
     "lint": "yarn lint:js",
