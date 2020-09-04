@@ -1,4 +1,10 @@
 {
+  "name": "gam-agri-pieces",
+  "description": "ecommerce",
+  "version": "1.0.0",
+  "engines": {
+    "node": "12.18.1"
+  },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "chart.js": "^2.9.3",
@@ -7,7 +13,6 @@
     "lightbox2": "^2.9.0",
     "semantic-ui-css": "^2.2.0",
     "slick-carousel": "^1.8.1",
-    "node": "^12.x"
   },
   "devDependencies": {
     "@symfony/webpack-encore": "^0.28.0",
