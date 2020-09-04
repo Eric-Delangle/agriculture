@@ -55,7 +55,6 @@
     "type": "git",
     "url": "git+https://github.com/Sylius/Sylius.git"
   },
-
   "author": "Paweł Jędrzejewski",
   "license": "MIT"
 }
