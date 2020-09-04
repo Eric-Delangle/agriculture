@@ -7,7 +7,7 @@
     "lightbox2": "^2.9.0",
     "semantic-ui-css": "^2.2.0",
     "slick-carousel": "^1.8.1",
-    "node": "12.18.1"
+    "node": "12.x"
   },
   "devDependencies": {
     "@symfony/webpack-encore": "^0.28.0",
