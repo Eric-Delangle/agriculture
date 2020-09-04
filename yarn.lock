@@ -6345,10 +6345,10 @@ node-sass@^4.8.3:
     stdout-stream "^1.4.0"
     "true-case-path" "^1.0.2"
 
-node@12.18.1:
-  version "12.18.1"
-  resolved "https://registry.yarnpkg.com/node/-/node-12.18.1.tgz#cc84c8a8e143a4a4621a4ae749d701f7ac8c0c8e"
-  integrity sha512-ipYAiNamYG0B+Chb1fbzOnstplHPTzjQur90HljDtOXyXwpciOAx2xPnfKNadPLcefgzCpsAavN+sJsl/hGcMA==
+node@12.0.0:
+  version "12.0.0"
+  resolved "https://registry.yarnpkg.com/node/-/node-12.0.0.tgz#c77615aa6309c3d2e05369fcdd99bdd84ae6b258"
+  integrity sha512-F50pDLNur5yHvBf4FyKzotVvP25Y73Pe2suyeICOHbALrPHmuKkf3QDgMTEnI1e6QZGfiftdauMlGlW0McJ35Q==
   dependencies:
     node-bin-setup "^1.0.0"
 
@@ -9784,8 +9784,3 @@ yargs@^7.0.0, yargs@^7.1.0:
     which-module "^1.0.0"
     y18n "^3.2.1"
     yargs-parser "^5.0.0"
-
-yarn@1.22.5:
-  version "1.22.5"
-  resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.22.5.tgz#1933b7635429ca00847222dd9d38f05646e2df23"
-  integrity sha512-5uzKXwdMc++mYktXqkfpNYT9tY8ViWegU58Hgbo+KXzrzzhEyP1Ip+BTtXloLrXNcNlxFJbLiFKGaS9vK9ym6Q==
