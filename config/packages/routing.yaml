@@ -1,5 +1,3 @@
 framework:
     router:
         strict_requirements: ~
-symfony_cmf:
-    resource: @CmfCreateBundle/Resources/config/routing/rest_no_locale.xml
