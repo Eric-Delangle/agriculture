@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 {# Pour le deploiement heroku attention d'ajouter les dossiers necessaires dans le gitignore #}
+
 <html lang="{{ app.request.locale|slice(0, 2) }}">
+
+        <p>Veuillez entrer le mot de passe :</p>
+        <form  method="post">
+            <p>
+            <input type="password" name="mot_de_passe" />
+            <input type="submit" value="Valider" />
+            </p>
+        </form>
+
+{%  if (isset($_POST['mot_de_passe']) AND $_POST['mot_de_passe'] ==  "password") %}
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -65,3 +76,4 @@
 {{ sylius_template_event('sylius.shop.layout.after_body') }}
 </body>
 </html>
+{% endif %}
