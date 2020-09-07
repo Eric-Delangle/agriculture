@@ -1,0 +1,28 @@
+/* MON CSS */
+
+body { 
+    margin:0;
+    padding:0;
+    background-image:  url("/assets/shop/img/homepage.jpg")!important;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+  }
+
+  /* Couleur de fond du champs panier  */
+  .ui.circular.button {
+    background-color: #ffffff!important;
+}
+
+/* Couleur de fond du champs " Vous avez déja un compte..." de la page d'inscription */
+.ui.basic.button {
+  background-color: #ffffff!important;
+}
+
+.footer-perso {
+    background-image:  url("/assets/shop/img/footer.jpg")!important;
+    background-size: cover!important;
+  }
+ 
+ /* FIN DE MON CSS */
