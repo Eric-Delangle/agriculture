@@ -52,7 +52,7 @@
     "yargs": "^6.4.0"
   },
   "scripts": {
-
+    "npm run build":"symfony-cmd",
     "build": "npm build",
     "gulp": "gulp build",
     "lint": "yarn lint:js",
