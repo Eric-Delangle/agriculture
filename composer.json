@@ -62,7 +62,6 @@
     },
     "scripts": {
         "auto-scripts": {
-            "sylius:install-n|--no-interaction ": "symfony-cmd",
             "assets:install %PUBLIC_DIR%": "symfony-cmd",
             "doctrine:migrations:migrate --no-interaction": "symfony-cmd"
         },
