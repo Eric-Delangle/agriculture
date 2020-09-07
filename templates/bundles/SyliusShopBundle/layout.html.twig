@@ -13,6 +13,7 @@
     {% endblock %}
 
     {% block stylesheets %}
+    {{ encore_entry_link_tags('app') }}
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         
         {% include '@SyliusUi/_stylesheets.html.twig' with {'path': 'assets/shop/css/style.css'} %}
@@ -55,6 +56,7 @@
 </div>
 
 {% block javascripts %}
+{{ encore_entry_script_tags('app') }}
  {% include '@SyliusUi/_javascripts.html.twig' with {'path': 'assets/shop/js/app.js'} %}
     {{ sylius_template_event('sylius.shop.layout.javascripts') }}
 {% endblock %}
