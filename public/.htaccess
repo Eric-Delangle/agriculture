@@ -1,9 +1,9 @@
-<FilesMatch "test">
-    AuthName "Blog secret"
-    AuthType Basic
-    AuthUserFile /.htpasswd
-    Exiger l'utilisateur polu@hotmail.fr
-</FilesMatch>
+AuthType basic
+AuthName "Your site/page name"
+AuthUserFile /.htpasswd
+<Files "https://ecommerce-agriculture.herokuapp.com/">
+  require valid-user
+</Files>
 
 # Use the front controller as index file. It serves as a fallback solution when
 # every other rewrite/redirect fails (e.g. in an aliased environment without
