@@ -1,4 +1,4 @@
-AuthName "Page protégée"
+AuthName "Page protégée "
 AuthType Basic
 AuthUserFile ".htpasswd"
 Require valid-user
