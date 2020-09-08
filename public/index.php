@@ -1,12 +1,3 @@
-<div id="pass">
-    <p>Veuillez entrer le mot de passe :</p>
-    <form action="" method="post">
-        <p>
-            <input type="password" name="mot_de_passe" />
-            <input type="submit" value="Valider" />
-        </p>
-    </form>
-</div>
 <?php
 
 use App\Kernel;
@@ -15,8 +6,6 @@ use Symfony\Component\HttpFoundation\Request;
 
 require dirname(__DIR__) . '/config/bootstrap.php';
 
-if (isset($_POST['mot_de_passe']) and $_POST['mot_de_passe'] ==  "password") // Si le mot de passe est bon
-{
 
     if ($_SERVER['APP_DEBUG']) {
         umask(0000);
@@ -37,6 +26,4 @@ if (isset($_POST['mot_de_passe']) and $_POST['mot_de_passe'] ==  "password") // 
     $response = $kernel->handle($request);
     $response->send();
     $kernel->terminate($request, $response);
-} else {
-    echo "Mauvais mot de passe";
-}
+
