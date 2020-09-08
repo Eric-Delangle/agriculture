@@ -29,9 +29,8 @@ final class HomePageController
 
     public function indexAction(Request $request): Response
     {
-        if (isset($_POST['mot_de_passe']) AND $_POST['mot_de_passe'] ==  "password") // Si le mot de passe est bon
-        {
+     
         return $this->templatingEngine->renderResponse('@SyliusShop/Homepage/index.html.twig');
-        }
+       
     }
 }
