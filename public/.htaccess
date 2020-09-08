@@ -1,3 +1,8 @@
+AuthName "Page protégée "
+    AuthType Basic
+    AuthUserFile "/.htpasswd"
+    Require valid-user
+
 # Use the front controller as index file. It serves as a fallback solution when
 # every other rewrite/redirect fails (e.g. in an aliased environment without
 # mod_rewrite). Additionally, this reduces the matching process for the
@@ -15,10 +20,7 @@ DirectoryIndex index.php
 <IfModule mod_negotiation.c>
     Options -MultiViews
 </IfModule>
-    AuthName "Page protégée "
-    AuthType Basic
-    AuthUserFile "/.htpasswd"
-    Require valid-user
+    
 <IfModule mod_rewrite.c>
 
     RewriteEngine On
