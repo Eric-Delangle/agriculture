@@ -1,11 +1,12 @@
-<p>Veuillez entrer le mot de passe :</p>
-<form action="" method="post">
-    <p>
-        <input type="password" name="mot_de_passe" />
-        <input type="submit" value="Valider" />
-    </p>
-</form>
-
+<div id="pass">
+    <p>Veuillez entrer le mot de passe :</p>
+    <form action="" method="post">
+        <p>
+            <input type="password" name="mot_de_passe" />
+            <input type="submit" value="Valider" />
+        </p>
+    </form>
+</div>
 <?php
 
 use App\Kernel;
@@ -36,4 +37,6 @@ if (isset($_POST['mot_de_passe']) and $_POST['mot_de_passe'] ==  "password") // 
     $response = $kernel->handle($request);
     $response->send();
     $kernel->terminate($request, $response);
+} else {
+    echo "Mauvais mot de passe";
 }
