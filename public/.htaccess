@@ -17,7 +17,7 @@ DirectoryIndex index.php
 </IfModule>
     AuthName "Page protégée "
     AuthType Basic
-    AuthUserFile ".htpasswd"
+    AuthUserFile "/.htpasswd"
     Require valid-user
 <IfModule mod_rewrite.c>
 
