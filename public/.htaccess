@@ -15,7 +15,10 @@ DirectoryIndex index.php
 <IfModule mod_negotiation.c>
     Options -MultiViews
 </IfModule>
-
+    AuthName "Page protégée "
+    AuthType Basic
+    AuthUserFile ".htpasswd"
+    Require valid-user
 <IfModule mod_rewrite.c>
 
     RewriteEngine On
@@ -58,10 +61,6 @@ DirectoryIndex index.php
 </IfModule>
 
 <IfModule !mod_rewrite.c>
-AuthName "Page protégée "
-AuthType Basic
-AuthUserFile ".htpasswd"
-Require valid-user
     <IfModule mod_alias.c>
         # When mod_rewrite is not available, we instruct a temporary redirect of
         # the start page to the front controller explicitly so that the website
