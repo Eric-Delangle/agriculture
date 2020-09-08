@@ -34,6 +34,7 @@ services:
         resource: '../src/Controller'
         tags: ['controller.service_arguments']
 
-app.home_page_resource_controller:
-    class: App\Controller\HomePageController
-    public: true
+app.controller.shop.homepage:
+    class: App\Controller\Shop\HomePageController
+    arguments: ["@templating"]
+    tags: ["controller.service.arguments"]

@@ -11,7 +11,7 @@
 
 declare(strict_types=1);
 
-namespace App\Controller;
+namespace App\Controller\Shop;
 
 use Symfony\Bundle\FrameworkBundle\Templating\EngineInterface;
 use Symfony\Component\HttpFoundation\Request;
