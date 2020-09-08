@@ -17,7 +17,7 @@ use Symfony\Bundle\FrameworkBundle\Templating\EngineInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-final class HomepageController
+final class HomePageController
 {
     /** @var EngineInterface */
     private $templatingEngine;
