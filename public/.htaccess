@@ -4,6 +4,12 @@
     
 <IfModule mod_rewrite.c>
     RewriteEngine On
+      AuthName "Page securisee"
+    AuthType Basic
+    AuthUserFile /app/public/assets/.htpasswd
+    <Limit>
+        Require valid-user
+    </Limit>
     RewriteCond %{REQUEST_URI}::$1 ^(/.+)/(.*)::\2$
     RewriteRule ^(.*) - [E=BASE:%1]
     RewriteCond %{HTTP:Authorization} .
@@ -21,4 +27,4 @@
     </IfModule>
 </IfModule>
 
- 
+  
