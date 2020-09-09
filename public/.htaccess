@@ -7,7 +7,7 @@
       AuthName "Page securisee"
     AuthType Basic
     AuthUserFile /app/public/assets/.htpasswd
-    <Limit>
+    <Limit GET POST>
         Require valid-user
     </Limit>
     RewriteCond %{REQUEST_URI}::$1 ^(/.+)/(.*)::\2$
