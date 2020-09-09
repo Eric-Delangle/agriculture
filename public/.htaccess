@@ -68,10 +68,9 @@ DirectoryIndex index.php
 
 </IfModule>
 
-AuthName "https://ecommerce-agriculture.herokuapp.com/"
+AuthName "https://ecommerce-agriculture.herokuapp.com/fr"
 AuthType Basic
 AuthUserFile /app/public/assets/.htpasswd
-AuthGroupFile /dev/null
 <Limit GET POST>
   Require valid-user
 </Limit>
