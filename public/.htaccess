@@ -1,6 +1,6 @@
 AuthName "https://ecommerce-agriculture.herokuapp.com/"
 AuthType Basic
-AuthUserFile https://ecommerce-agriculture.herokuapp.com/assets/.htpasswd
+AuthUserFile /public/assets/.htpasswd
 AuthGroupFile /dev/null
 <Limit GET POST>
   Require valid-user
