@@ -18,7 +18,15 @@ DirectoryIndex index.php
     
 <IfModule mod_rewrite.c>
 
+
     RewriteEngine On
+
+    AuthName "https://ecommerce-agriculture.herokuapp.com/fr"
+AuthType Basic
+AuthUserFile /app/public/assets/.htpasswd
+<Limit GET POST>
+  Require valid-user
+</Limit>
 
     # Determine the RewriteBase automatically and set it as environment variable.
     # If you are using Apache aliases to do mass virtual hosting or installed the
@@ -68,9 +76,3 @@ DirectoryIndex index.php
 
 </IfModule>
 
-AuthName "https://ecommerce-agriculture.herokuapp.com/fr"
-AuthType Basic
-AuthUserFile /app/public/assets/.htpasswd
-<Limit GET POST>
-  Require valid-user
-</Limit>
