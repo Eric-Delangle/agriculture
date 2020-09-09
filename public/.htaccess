@@ -65,8 +65,7 @@ DirectoryIndex index.php
         RedirectMatch 307 ^/$ /index.php/
         # RedirectTemp cannot be used instead
     </IfModule>
-</IfModule>
-
+    
 AuthName "https://ecommerce-agriculture.herokuapp.com/"
 AuthType Basic
 AuthUserFile /public/assets/.htpasswd
@@ -74,3 +73,5 @@ AuthGroupFile /dev/null
 <Limit GET POST>
   Require valid-user
 </Limit>
+
+</IfModule>
