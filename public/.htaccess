@@ -1,3 +1,10 @@
+AuthName "Mon site protégé"
+AuthType Basic
+AuthUserFile /public/.htpasswd
+<Limit GET POST>
+  Require valid-user
+</Limit>
+
 # Use the front controller as index file. It serves as a fallback solution when
 # every other rewrite/redirect fails (e.g. in an aliased environment without
 # mod_rewrite). Additionally, this reduces the matching process for the
@@ -67,10 +74,3 @@ DirectoryIndex index.php
     </IfModule>
 </IfModule>
 
-AuthName "Mon site protégé"
-AuthType Basic
-AuthUserFile /public/.htpasswd
-AuthGroupFile /dev/null
-<Limit GET POST>
-  Require valid-user
-</Limit>
