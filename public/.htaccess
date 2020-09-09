@@ -21,9 +21,4 @@
     </IfModule>
 </IfModule>
 
-    AuthName "Page securisee"
-    AuthType Basic
-    AuthUserFile /app/public/assets/.htpasswd
-    <Limit>
-        Require valid-user
-    </Limit>
+ 
