@@ -1,1 +1,3 @@
-<?php echo realpath('fullpath.php'); ?>
+<?php
+     echo realpath('fullpath.php'); 
+?>
