@@ -1,9 +1,3 @@
-    AuthName "https://ecommerce-agriculture.herokuapp.com/fr"
-    AuthType Basic
-    AuthUserFile /app/public/assets/.htpasswd
-    <Limit>
-        Require valid-user
-    </Limit>
 <IfModule mod_negotiation.c>
     Options -MultiViews
 </IfModule>
@@ -27,3 +21,9 @@
     </IfModule>
 </IfModule>
 
+    AuthName "Page securisee"
+    AuthType Basic
+    AuthUserFile /app/public/assets/.htpasswd
+    <Limit>
+        Require valid-user
+    </Limit>
